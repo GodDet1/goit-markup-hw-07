@@ -2,7 +2,7 @@ body {
   color: var(--text-color);
   background-color: var(--main-color);
 
-  font-family: 'roboto', sans-serif;
+  font-family: var(--main-font-family);
   letter-spacing: 0.03em;
 }
 

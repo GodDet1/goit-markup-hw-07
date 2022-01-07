@@ -1,5 +1,3 @@
-//  Global mixins
-
 // Container
 
 @mixin container($w, $pl, $pr) {
@@ -22,7 +20,7 @@
   padding-bottom: 94px;
 }
 
-// Display flex
+// Flex
 
 @mixin flex-center($al: center, $jf: center) {
   display: flex;
@@ -51,6 +49,8 @@
   //   visibility: none;
 }
 
+//button
+
 @mixin button($pl, $pr, $color, $bg-c) {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -73,4 +73,20 @@
   border: none;
 
   cursor: pointer;
+}
+
+//fonts
+
+//main font
+
+@mixin font-Roboto($f-weight, $f-size, $f-height, $color, $l-spacing) {
+  // not used
+  font-style: normal;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $f-height;
+
+  letter-spacing: $l-spacing;
+
+  color: $color;
 }
