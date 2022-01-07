@@ -1,3 +1,23 @@
+body {
+  color: var(--text-color);
+  background-color: var(--main-color);
+
+  font-family: 'roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0%;
+}
+
 .container {
   @include container(1200px, 15px, 15px);
 }
