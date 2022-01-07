@@ -117,7 +117,7 @@
   @include flex-center;
 
   background-color: rgba(47, 48, 58, 0.8);
-  & .ourwork-description {
+  & p {
     color: var(--main-color);
     margin: 0;
 
@@ -146,35 +146,35 @@
   }
 }
 
-.team-work {
+.team-teamwork {
   @include flex-center(center, flex-start);
   margin-top: 0px;
   margin-bottom: 0px;
-  & .team-block {
-    margin-right: 30px;
-    padding-bottom: 30px;
+}
 
-    background-color: var(--main-color);
+.team-block {
+  margin-right: 30px;
+  padding-bottom: 30px;
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    &:last-child {
-      margin-right: 0px;
-    }
+  background-color: var(--main-color);
 
-    .employee {
-      margin-top: 30px;
-      margin-bottom: 10px;
-
-      color: var(--headline-color);
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-    }
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:last-child {
+    margin-right: 0px;
   }
-  & .profession {
+  .team-employee {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: var(--headline-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  & .team-profession {
     margin-top: 0px;
     margin-bottom: 16px;
     font-size: 16px;
@@ -233,7 +233,7 @@
   }
 }
 
-.clients-icons {
+.clients-icon {
   @include flex-center;
   & a {
     @include flex-center;
@@ -385,7 +385,7 @@
   }
   & p {
     margin: 63px 24px;
-  
+
     font-size: 18px;
     line-height: calc(28 / 18);
     color: var(--main-color);

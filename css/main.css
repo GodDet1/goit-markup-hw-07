@@ -248,7 +248,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.ourwork-description_box .ourwork-description {
+.ourwork-description_box p {
   color: var(--main-color);
   margin: 0;
   font-weight: bold;
@@ -274,7 +274,7 @@ img {
   line-height: 1.17;
 }
 
-.team-work {
+.team-teamwork {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -291,7 +291,7 @@ img {
   margin-bottom: 0px;
 }
 
-.team-work .team-block {
+.team-block {
   margin-right: 30px;
   padding-bottom: 30px;
   background-color: var(--main-color);
@@ -301,11 +301,11 @@ img {
           border-radius: 0px 0px 4px 4px;
 }
 
-.team-work .team-block:last-child {
+.team-block:last-child {
   margin-right: 0px;
 }
 
-.team-work .team-block .employee {
+.team-block .team-employee {
   margin-top: 30px;
   margin-bottom: 10px;
   color: var(--headline-color);
@@ -314,7 +314,7 @@ img {
   line-height: 1.19;
 }
 
-.team-work .profession {
+.team-block .team-profession {
   margin-top: 0px;
   margin-bottom: 16px;
   font-size: 16px;
@@ -393,7 +393,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.clients-icons {
+.clients-icon {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -408,7 +408,7 @@ img {
           justify-content: center;
 }
 
-.clients-icons a {
+.clients-icon a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -435,30 +435,30 @@ img {
   transition: border-color var(--transition-time-cubic);
 }
 
-.clients-icons a .clients-company {
+.clients-icon a .clients-company {
   fill: var(--team-icon-color);
   -webkit-transition: fill var(--transition-time-cubic);
   -o-transition: fill var(--transition-time-cubic);
   transition: fill var(--transition-time-cubic);
 }
 
-.clients-icons a:not(:last-child) {
+.clients-icon a:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-icons a:hover {
+.clients-icon a:hover {
   border-color: var(--accent-color);
 }
 
-.clients-icons a:hover .clients-company {
+.clients-icon a:hover .clients-company {
   fill: var(--accent-color);
 }
 
-.clients-icons a:focus {
+.clients-icon a:focus {
   border-color: var(--accent-color);
 }
 
-.clients-icons a:focus .clients-company {
+.clients-icon a:focus .clients-company {
   fill: var(--accent-color);
 }
 
@@ -725,7 +725,7 @@ header .nav {
   letter-spacing: 0.02em;
 }
 
-.nav-contacts .contact {
+.nav-contacts .nav-mail_tel {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -747,12 +747,12 @@ header .nav {
   transition: color var(--transition-time-cubic);
 }
 
-.nav-contacts .contact:hover svg,
-.nav-contacts .contact:focus svg {
+.nav-contacts .nav-mail_tel:hover svg,
+.nav-contacts .nav-mail_tel:focus svg {
   fill: var(--accent-color);
 }
 
-.nav-contacts .contact:hover, .nav-contacts .contact:focus {
+.nav-contacts .nav-mail_tel:hover, .nav-contacts .nav-mail_tel:focus {
   color: var(--accent-color);
 }
 
@@ -767,7 +767,7 @@ header .nav {
   transition: fill var(--transition-time-cubic);
 }
 
-.icon-color {
+.nav-icon {
   fill: var(--text-color);
   margin-right: 10px;
 }
@@ -878,7 +878,7 @@ footer .container.centered {
   background-color: var(--accent-color);
 }
 
-.footer-social .footer-icons {
+.footer-social .footer-icon {
   fill: var(--main-color);
 }
 

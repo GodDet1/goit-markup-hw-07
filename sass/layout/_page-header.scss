@@ -60,7 +60,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  & .contact {
+  & .nav-mail_tel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ header {
   }
 }
 
-.icon-color {
+.nav-icon {
   fill: var(--text-color);
   margin-right: 10px;
 }
