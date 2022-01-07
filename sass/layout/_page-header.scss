@@ -1,24 +1,22 @@
 /* Header */
+
 header {
   border-bottom: 1px solid var(--border-color);
-}
-
-.nav {
-  @include flex-center;
+  & .nav {
+    @include flex-center;
+  }
 }
 
 .nav-bar {
   @include flex-center;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-.nav-bar li {
-  margin-right: 50px;
-}
-
-.nav-bar li:last-child {
-  margin-right: 0px;
+  li {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
 .nav-link {
@@ -34,16 +32,22 @@ header {
   letter-spacing: 0.02em;
 
   transition: color var(--transition-time-cubic);
-}
-
-.contact {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  color: var(--text-color);
-  text-decoration: none;
-
-  transition: color var(--transition-time-cubic);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current-page {
+    color: var(--accent-color);
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      height: 4px;
+      width: 100%;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
 }
 
 .nav-contacts {
@@ -56,52 +60,39 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  & .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    transition: color var(--transition-time-cubic);
+    &:hover svg,
+    &:focus svg {
+      fill: var(--accent-color);
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  & a {
+    &:first-child {
+      margin-right: 30px;
+    }
+    & svg {
+      margin-right: 10px;
+
+      transition: fill var(--transition-time-cubic);
+    }
+  }
 }
 
-.nav-contacts a:first-child {
-  margin-right: 30px;
-}
-
-.nav-contacts a svg {
-  margin-right: 10px;
-
-  transition: fill var(--transition-time-cubic);
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .icon-color {
   fill: var(--text-color);
   margin-right: 10px;
-}
-
-.contact:hover svg,
-.contact:focus svg {
-  fill: var(--accent-color);
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.contact:hover,
-.contact:focus,
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
-}
-
-.nav-link.current-page {
-  color: var(--accent-color);
-}
-
-.nav-link.current-page::before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  height: 4px;
-  width: 100%;
-  background-color: var(--accent-color);
-  border-radius: 2px;
 }
